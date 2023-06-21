@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/movie.css">
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="https://merchant.brij.money/brij_logo2.svg" alt="">
+    </div>
+    <div id="latestMovies" class="sidebar-item"><a href="dashboard.html">Latest Movies</a></div>
+    <div id="searchMovies" class="sidebar-item active"><a href="#">Search Movies</a></div>
+    <div id="suggestRecommend" class="sidebar-item"><a href="suggest.html">Suggest/Recommend</a></div>
+  </div>
+
+  <header id="header">
+    <div class="menu-container" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <h4 class="title">Search Movies</h4>
+      <div class="dropdown">
+        <button class="dropdown-toggle" id="loggedInEmail">Account</button>
+        <div class="dropdown-menu">
+          <a href="#">Profile</a>
+          <hr class="dropdown-separator">
+          <a id="logout" href="index.html">Logout</a>
+        </div>
+      </div>
+  </header>
+
+  <div class="content" id="content">
+  
+    <h3 class="content-head">Search Movies</h3>
+    <br>
+    
+    <div>
+      <form>
+        <input type="text" class="input-field" placeholder="Search movies..." id="searchInput"/>
+        <!-- <input type="submit" value="Submit" class="input-field-submit" /> -->
+      </form>
+
+      
+    </div>
+    <div id="searchResults"></div>
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/search.js"></script>
+
+  <script>
+   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggest</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/movie.css">
+  <link rel="stylesheet" href="css/suggestion-form.css">
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="https://merchant.brij.money/brij_logo2.svg" alt="">
+    </div>
+    <div id="latestMovies" class="sidebar-item"><a href="dashboard.html">Latest Movies</a></div>
+    <div id="searchMovies" class="sidebar-item"><a href="search.html">Search Movies</a></div>
+    <div id="suggestRecommend" class="sidebar-item active"><a href="#">Suggest/Recommend</a></div>
+  </div>
+
+  <header id="header">
+    <div class="menu-container" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <h4 class="title">Suggest Movies</h4>
+      <div class="dropdown">
+        <button class="dropdown-toggle" id="loggedInEmail">Account</button>
+        <div class="dropdown-menu">
+          <a href="#">Profile</a>
+           <hr class="dropdown-separator">
+          <a id="logout" href="index.html">Logout</a>
+        </div>
+      </div>
+  </header>
+
+   <div class="content" id="content">
+    
+    <h3 class="content-head">Suggest a Part Two</h3>
+   
+    <br>
+   
+    <form id="suggestionForm" class="suggest-form">
+      <div class="form-group suggest-form-group">
+        <label for="suggestionType" class="suggest-label">Type</label>
+        <select id="suggestionType" name="suggestionType" class="suggest-select">
+          <option value="suggest-new">Suggest New</option>
+          <option value="recommend-part-two">Recommend Part Two</option>
+        </select>
+      </div>
+      <div class="form-group suggest-form-group">
+        <label for="suggestionReason" class="suggest-label">Reason</label>
+        <textarea id="suggestionReason" name="suggestionReason" rows="4" class="suggest-textarea"></textarea>
+      </div>
+      <div class="form-group suggest-form-group">
+        <label for="suggestionImage" class="suggest-label">Image Upload</label>
+        <input type="file" id="suggestionImage" name="suggestionImage" class="suggest-input-file">
+      </div>
+      <div class="form-group suggest-form-group">
+        <button type="submit" class="suggest-button">Submit</button>
+      </div>
+    </form>
+    
+
+      <br>
+
+    <h3 class="content-head">Movie Suggestions</h3>
+  
+    <div id="movieSuggestions"></div>
+   
+  </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/suggest.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #053941;
+    color: white;
+    width: 250px;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: margin-left 0.7s ease;
+  }
+  
+  .sidebar-item {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .sidebar-logo {
+    height: 100px;
+  }
+  .sidebar-logo img {
+    width: 100%;
+    height: 100px;
+  }
+  .sidebar-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #06242A;
+    color: #288570;
+  }
+  
+  .sidebar-item.active {
+    background-color: #06242A;
+    color: #288570;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 2px 10px 0px #c5c5c5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 250px;
+    transition: margin-left 0.7s ease;
+  }
+  
+  .title {
+    color: #000000;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-separator {
+    border: 1px solid #e8e8e8;
+    margin: 0px 7px;
+  }
+  
+  .dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 170px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+    margin-left: -110px;
+    border-radius: 6px;
+  }
+  
+  .dropdown-menu a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-menu a:nth-child(1) {
+    
+    border-radius: 6px 6px 0px 0px;
+  }
+  .dropdown-menu a:nth-child(3) {
+    
+    border-radius:0px 0px 6px 6px ;
+  }
+  .dropdown-menu a:hover {
+    color: #ffffff;
+    background-color: #288570;
+   
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Content styles */
+  .content {
+    /* margin-top: 80px; */
+    padding: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.5s ease;
+  }
+
+  #upcomingMovies {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  }
+  #searchResults {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin-top:20px;
+  }
+  #movieSuggestions {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin-top:20px;
+  }
+  .search-text {
+   color:#999999
+  }
+  .content-head{
+    font-family: "Montserrat", sans-serif !important;
+    color: #e7e7e7 !important;
+    margin: 0px !important;
+  }
+  /* CSS for the input field */
+  .input-field {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+  
+  .input-field::placeholder {
+    color: #999999;
+  }
+  
+  .input-field-submit {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .input-field-submit:hover {
+    background-color: #555555;
+  }
+
+  .menu-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 24px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 3px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }

@@ -1,0 +1,67 @@
+.suggest-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggest-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .suggest-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .suggest-select,
+  .suggest-textarea,
+  .suggest-input-file {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .suggest-select {
+    appearance: none;
+    background-color: #fff;
+    background-image: url("path/to/select-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 30px;
+  }
+  
+  .suggest-textarea {
+    resize: vertical;
+  }
+  
+  .suggest-input-file {
+    cursor: pointer;
+  }
+  
+  .suggest-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #053941;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .suggest-button:hover {
+    background-color: #06242A;
+  }
+  
+  .suggestion-card{
+    margin-left: 6px;
+    border: 2px solid #f4f4f4;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 1px 1px 2px 1px #bcb8b8;
+  }
+  
